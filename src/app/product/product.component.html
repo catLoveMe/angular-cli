@@ -1,0 +1,16 @@
+<p>
+  product works!
+</p>
+<div class="black">
+  <a *ngFor="let her of heros" [routerLink] = "['/detail',her.id]">
+    <h1>{{her.name}}</h1>
+  </a>
+</div>
+<ul>
+  <li><a [routerLink] = "['./tab1']"><h1>tab1</h1></a></li>
+  <li><a [routerLink] = "['./tab2']"><h1>tab2</h1></a></li>
+</ul>
+<h2>父亲的i:{{i}}</h2>
+<button id="btn">点击测试jquery</button>
+<app-button [content] = 'b' (changeNumber) = 'numberChange($event)' (str) = 'getStr($event)'  (click) = 'onClick()' #son (sendInfo) = 'getInfo($event)'></app-button>
+<router-outlet></router-outlet>
