@@ -39,11 +39,7 @@ const routes: Routes = [
   {
     path:'detail/:id',
     component: ProDetailComponent
-  },
-  // {
-  //   path:'gy-module',
-  //   loadChildren:'app/gy-module/gy-module.module#gy-moduleModule'
-  // }
+  }
 ];
 
 @NgModule({

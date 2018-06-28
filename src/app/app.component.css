@@ -3,3 +3,22 @@
   background-color: #9b9b9b !important;
 
 }
+ul{
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid palegoldenrod;
+  min-height: 40px;
+}
+ul>li{
+  list-style: none;
+  padding: 10px;
+  float: left;
+  margin: 0 20px ;
+}
+main{
+  width: 80%;
+  margin: 20px  auto;
+  outline: 1px solid black;
+  min-height: 400px;
+  text-align: center;
+}

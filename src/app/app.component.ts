@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from "@ngx-translate/core";
+// import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,14 +7,14 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class AppComponent {
   title = 'app';
-  constructor(public translateService: TranslateService) {}
+  // constructor(public translateService: TranslateService) {}
 
  ngOnInit() {
      // --- set i18n begin ---
-     this.translateService.addLangs(["zh", "en"]);
-     this.translateService.setDefaultLang("zh");
-     const browserLang = this.translateService.getBrowserLang();
-     this.translateService.use(browserLang.match(/zh|en/) ? browserLang : 'zh');
+    //  this.translateService.addLangs(["zh", "en"]);
+    //  this.translateService.setDefaultLang("zh");
+    //  const browserLang = this.translateService.getBrowserLang();
+    //  this.translateService.use(browserLang.match(/zh|en/) ? browserLang : 'zh');
      // --- set i18n end ---
   }
 }
